@@ -1,27 +1,21 @@
 {
   "name": "newspulse",
-  "version": "0.1.0",
-  "description": "📰 NewsPulse - 加密货币新闻聚合，重要事件实时推送",
+  "version": "0.1.2",
+  "description": "📰 NewsPulse - 加密货币新闻聚合，10+ 媒体源实时推送",
   "main": "scripts/news.mjs",
   "type": "module",
   "scripts": {
     "news": "node scripts/news.mjs",
-    "news:btc": "node scripts/news.mjs --tag btc --limit 15",
-    "news:eth": "node scripts/news.mjs --tag eth --limit 15",
-    "news:high": "node scripts/news.mjs --importance high",
-    "sentiment": "node scripts/sentiment.mjs",
-    "subscribe": "node scripts/subscribe.mjs",
+    "search": "node scripts/search.mjs",
     "test": "node scripts/news.mjs --limit 10"
   },
   "keywords": [
-    "news",
     "crypto",
-    "bitcoin",
-    "ethereum",
+    "news",
     "media",
-    "alert",
-    "defi",
-    "finance"
+    "rss",
+    "coindesk",
+    "cointelegraph"
   ],
   "author": "@gztanht",
   "license": "MIT",
