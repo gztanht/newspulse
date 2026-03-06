@@ -1,0 +1,41 @@
+{
+  "name": "newspulse",
+  "version": "0.1.0",
+  "description": "📰 NewsPulse - 加密货币新闻聚合，重要事件实时推送",
+  "main": "scripts/news.mjs",
+  "type": "module",
+  "scripts": {
+    "news": "node scripts/news.mjs",
+    "news:btc": "node scripts/news.mjs --tag btc --limit 15",
+    "news:eth": "node scripts/news.mjs --tag eth --limit 15",
+    "news:high": "node scripts/news.mjs --importance high",
+    "sentiment": "node scripts/sentiment.mjs",
+    "subscribe": "node scripts/subscribe.mjs",
+    "test": "node scripts/news.mjs --limit 10"
+  },
+  "keywords": [
+    "news",
+    "crypto",
+    "bitcoin",
+    "ethereum",
+    "media",
+    "alert",
+    "defi",
+    "finance"
+  ],
+  "author": "@gztanht",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gztanht/newspulse"
+  },
+  "homepage": "https://clawhub.com/skills/newspulse",
+  "funding": {
+    "type": "crypto",
+    "usdt": "0x33f943e71c7b7c4e88802a68e62cca91dab65ad9",
+    "usdc": "0xcb5173e3f5c2e32265fbbcaec8d26d49bf290e44"
+  }
+}
