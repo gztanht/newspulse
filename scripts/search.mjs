@@ -138,8 +138,24 @@ if (args.includes('--help') || args.includes('-h')) {
 const limitIndex = args.indexOf('--limit');
 const limit = limitIndex > -1 ? parseInt(args[limitIndex + 1]) : 10;
 
-// 提取关键词
-const keywords = args.filter(a => !a.startsWith('--')).join(',').split(',').filter(k => k.trim());
+// 提取关键词 (先移除 --limit 和对应的值)
+const cleanedArgs = [];
+let skipNext = false;
+for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--limit') {
+        skipNext = true;
+        continue;
+    }
+    if (skipNext) {
+        skipNext = false;
+        continue;
+    }
+    if (!args[i].startsWith('--')) {
+        cleanedArgs.push(args[i]);
+    }
+}
+
+const keywords = cleanedArgs.join(',').split(',').filter(k => k.trim());
 
 if (keywords.length === 0) {
     console.log('❌ 请提供关键词');
