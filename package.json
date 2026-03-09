@@ -1,13 +1,22 @@
 {
   "name": "newspulse",
-  "version": "0.1.2",
-  "description": "📰 NewsPulse - 加密货币新闻聚合，10+ 媒体源实时推送",
+  "version": "1.0.0",
+  "description": "📰 NewsPulse - 加密货币新闻聚合，10+ 媒体源实时推送，情绪分析，新闻摘要",
   "main": "scripts/news.mjs",
   "type": "module",
   "scripts": {
     "news": "node scripts/news.mjs",
+    "aggregate": "node scripts/aggregate.mjs",
     "search": "node scripts/search.mjs",
+    "sentiment": "node scripts/sentiment.mjs",
+    "summary": "node scripts/summary.mjs",
     "test": "node scripts/news.mjs --limit 10"
+  },
+  "bin": {
+    "newspulse": "scripts/news.mjs",
+    "news-aggregate": "scripts/aggregate.mjs",
+    "news-sentiment": "scripts/sentiment.mjs",
+    "news-summary": "scripts/summary.mjs"
   },
   "keywords": [
     "crypto",

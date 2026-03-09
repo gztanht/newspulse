@@ -1,0 +1,28 @@
+{
+  "name": "newspulse",
+  "displayName": "📰 NewsPulse",
+  "version": "1.0.0",
+  "description": "加密货币新闻聚合器 - 10+ 媒体源实时推送，情绪分析，新闻摘要，领先市场一步",
+  "author": "@gztanht",
+  "license": "MIT",
+  "pricing": {
+    "model": "freemium",
+    "freeQuota": 5,
+    "freeQuotaPeriod": "daily",
+    "unlimitedPrice": "0.5",
+    "unlimitedCurrency": "USDT"
+  },
+  "category": "news",
+  "tags": ["news", "crypto", "sentiment", "analysis", "aggregation", "media"],
+  "features": [
+    "10+ 新闻源聚合",
+    "AI 情绪分析",
+    "智能摘要生成",
+    "关键词搜索",
+    "实时推送"
+  ],
+  "repository": "https://github.com/gztanht/newspulse",
+  "homepage": "https://clawhub.com/skills/newspulse",
+  "createdAt": "2026-03-06",
+  "updatedAt": "2026-03-09"
+}
